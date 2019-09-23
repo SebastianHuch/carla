@@ -60,7 +60,7 @@ blueprints also has an ID that uniquely identifies it and all the actor
 instances created with it. Examples of IDs are "vehicle.nissan.patrol" or
 "sensor.camera.depth".
 
-The list of all available blueprints is kept in the [**blueprint library**](/bp_library)
+The list of all available blueprints is kept in the [**blueprint library**](/en/latest/bp_library)
 
 ```py
 blueprint_library = world.get_blueprint_library()
@@ -72,7 +72,7 @@ wildcards, or just choosing one at random
 ```py
 # Find specific blueprint.
 collision_sensor_bp = blueprint_library.find('sensor.other.collision')
-# Chose a vehicle blueprint at random.
+# Choose a vehicle blueprint at random.
 vehicle_bp = random.choice(blueprint_library.filter('vehicle.bmw.*'))
 ```
 
@@ -474,7 +474,7 @@ right_lm_type = waypoint.right_lane_marking.type
 Waypoints also have function to query the "next" waypoints; this method returns
 a list of waypoints at a certain distance that can be accessed from this
 waypoint following the traffic rules. In other words, if a vehicle is placed in
-this waypoint, give me the list of posible locations that this vehicle can drive
+this waypoint, give me the list of possible locations that this vehicle can drive
 to. Let's see a practical example:
 
 ```py
